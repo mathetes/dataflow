@@ -1,0 +1,24 @@
+{
+  "name": "DataSbor",
+  "version": "1.0.0",
+  "description": "App for gathering data, built with MERN",
+  "keywords": [],
+  "author": "Mathetes",
+  "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "browserslist": "^4.16.3",
+    "font-awesome5": "^1.0.5",
+    "next": "10.0.6",
+    "node-sass": "^4.14.1",
+    "react": "^17.0.1",
+    "react-dom": "17.0.1",
+    "styled-components": "^5.2.1"
+  }
+}
