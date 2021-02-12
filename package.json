@@ -12,13 +12,18 @@
     "start": "next start"
   },
   "dependencies": {
+    "@material-ui/core": "^4.11.3",
     "@zeit/next-sass": "^1.0.1",
+    "antd": "^4.12.2",
     "browserslist": "^4.16.3",
     "font-awesome5": "^1.0.5",
+    "match-sorter": "^6.2.0",
+    "namor": "^2.0.2",
     "next": "10.0.6",
     "node-sass": "^4.14.1",
     "react": "^17.0.1",
     "react-dom": "17.0.1",
+    "react-table": "^7.6.3",
     "styled-components": "^5.2.1"
   }
 }

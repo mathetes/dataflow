@@ -1,7 +1,8 @@
+import RTable from "../components/RTable";
 export default function Main() {
   return (
     <div className="main-block">
-      <h2>Main block</h2>
+      <RTable />
     </div>
   );
 }
