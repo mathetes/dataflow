@@ -46,14 +46,14 @@ function Table({ columns, data }) {
 
   // We don't want to render all 2000 rows for this example, so cap
   // it at 20 for this use case
-  const firstPageRows = rows.slice(0, 20);
+  const firstPageRows = rows.slice(0, 5);
 
   return (
     <>
       <div>
         <div>
-          <IndeterminateCheckbox {...getToggleHideAllColumnsProps()} /> Toggle
-          All
+          <IndeterminateCheckbox {...getToggleHideAllColumnsProps()} /> Все
+          колонки
         </div>
         {allColumns.map((column) => (
           <div key={column.id}>
@@ -103,7 +103,7 @@ function Table({ columns, data }) {
         </tbody>
       </table>
       <br />
-      <div>Showing the first 20 results of {rows.length} rows</div>
+      <div>Показывать 20 рядов из {rows.length}</div>
       <p>Selected Rows: {Object.keys(selectedRowIds).length}</p>
       <pre>
         <code>

@@ -1,5 +1,3 @@
-import namor from "namor";
-
 const range = (len) => {
   const arr = [];
   for (let i = 0; i < len; i++) {
@@ -8,20 +6,26 @@ const range = (len) => {
   return arr;
 };
 
-const newPerson = () => {
+const myjson = {
+  myvalue: "Слово",
+  mysubject: "Быт.1,1-24",
+  perpose: "Исследовать библейское богословие текста",
+  task: "Доработать статью",
+  progress: "В процессе",
+  issue: "Как?",
+  variant: "best",
+};
+
+const dataList = () => {
   const statusChance = Math.random();
   return {
-    firstName: namor.generate({ words: 1, numbers: 0 }),
-    lastName: namor.generate({ words: 1, numbers: 0 }),
-    age: Math.floor(Math.random() * 30),
-    visits: Math.floor(Math.random() * 100),
-    progress: Math.floor(Math.random() * 100),
-    status:
-      statusChance > 0.66
-        ? "relationship"
-        : statusChance > 0.33
-        ? "complicated"
-        : "single",
+    myvalue: myjson.myvalue,
+    mysubject: myjson.mysubject,
+    perpose: myjson.perpose,
+    task: myjson.task,
+    progress: myjson.progress,
+    issue: myjson.issue,
+    variant: myjson.variant,
   };
 };
 
@@ -30,7 +34,7 @@ export default function makeData(...lens) {
     const len = lens[depth];
     return range(len).map((d) => {
       return {
-        ...newPerson(),
+        ...dataList(),
         subRows: lens[depth + 1] ? makeDataLevel(depth + 1) : undefined,
       };
     });
