@@ -1,7 +1,6 @@
 import React from "react";
 
-const dataDB = React.useMemo(
-  () => [
+const data = [
     {
       myvalue: "DEV",
       mysubject: "DataFlow",
@@ -745,8 +744,6 @@ const dataDB = React.useMemo(
       variant: "",
       progress: "",
     },
-  ],
-  []
-);
+  ]
 
-export default dataDB;
+export default data;

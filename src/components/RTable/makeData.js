@@ -1,3 +1,6 @@
+import React from "react";
+import dataDb from "./dataDb";
+
 const range = (len) => {
   const arr = [];
   for (let i = 0; i < len; i++) {
@@ -6,15 +9,18 @@ const range = (len) => {
   return arr;
 };
 
+
+
 const myjson = {
-  myvalue: "Слово",
-  mysubject: "Быт.1,1-24",
-  perpose: "Исследовать библейское богословие текста",
-  task: "Доработать статью",
-  progress: "В процессе",
-  issue: "Как?",
-  variant: "best",
-};
+    myvalue: "Слово",
+    mysubject: "Быт.1,1-24",
+    perpose: "Исследовать библейское богословие текста",
+    task: "Доработать статью",
+    progress: "В процессе",
+    issue: "Как?",
+    variant: "best",
+  };
+
 
 const dataList = () => {
   const statusChance = Math.random();

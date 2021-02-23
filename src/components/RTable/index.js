@@ -2,7 +2,8 @@ import React from "react";
 import Styles from "./Styles";
 
 import Table from "./Table";
-import makeData from "./makeData";
+//import makeData from "./makeData";
+import data from  "./dataDb";
 
 function RTable() {
   const columns = React.useMemo(
@@ -40,7 +41,8 @@ function RTable() {
     []
   );
 
-  const data = React.useMemo(() => makeData(20), []);
+  // const data = React.useMemo(() => makeData(20), []);
+
 
   return (
     <Styles>

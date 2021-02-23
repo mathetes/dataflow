@@ -3,6 +3,10 @@ import styled from "styled-components";
 const Styles = styled.div`
   padding: 1rem;
 
+  checkboxBlock {
+    display: inline-flex;
+    margin-bottom: 30px;
+  }
   table {
     border-spacing: 0;
     border: 1px solid black;

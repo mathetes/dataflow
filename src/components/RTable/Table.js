@@ -27,7 +27,7 @@ function Table({ columns, data }) {
           // The header can use the table's getToggleAllRowsSelectedProps method
           // to render a checkbox
           Header: ({ getToggleAllRowsSelectedProps }) => (
-            <div>
+            <div className="checkbox-block">
               <IndeterminateCheckbox {...getToggleAllRowsSelectedProps()} />
             </div>
           ),
@@ -46,7 +46,7 @@ function Table({ columns, data }) {
 
   // We don't want to render all 2000 rows for this example, so cap
   // it at 20 for this use case
-  const firstPageRows = rows.slice(0, 5);
+  const firstPageRows = rows.slice(0, 80);
 
   return (
     <>
